@@ -1,0 +1,365 @@
+@font-face {
+    font-family: 'Netflix Sans';
+    font-display: optional;
+    src: url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff2) format('woff2'),url(https://assets.nflxext.com/ffe/siteui/fonts/netflix-sans/v3/NetflixSans_W_Th.woff) format('woff')
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(blurred_background_only.jpg);
+    background-color: rgb(39, 38, 38);
+    box-shadow: inset 0 200px 100px -20px rgba(0, 0, 0, 0.7); 
+    background-size:1000vh 1000vh;
+}
+
+.back{
+    background-color: rgb(19, 18, 18);
+    height: 180vh;
+    margin: 40px 0 0 0;
+    border-top: 2px solid white;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.leftnavbar img{
+    width: 20vh;
+    height: 4.2vh
+}
+
+.leftnavbar{
+    align-self: center;
+    margin: 18px 0 0 26px;
+    scale: 50px;
+}  
+
+.rightnavbar{
+display: flex;
+align-self: center;
+gap: 0px;
+
+}
+
+.box1{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 20px;
+    border: 0.8px solid grey;
+    border-radius: 18px;
+    line-height: 1.25rem;
+    padding-top: 0.375rem;
+    padding-right: 4px;
+    padding-bottom: 0.375rem;
+    padding-left: 4px;
+}
+
+.box2{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: white;
+    margin: 20px 70px 20px -10px;
+    border: 0.8px solid grey;
+    border-radius: 18px;
+    line-height: 1px;
+    cursor: pointer;
+    padding-top: 15px;
+    padding-right: 12px;
+    padding-bottom:10px;
+    padding-left: 12px;
+    transition: 0.4s ease;
+}
+
+
+.fa-solid{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.box1:hover{
+    outline:2px solid white;
+    outline-offset: 2px;
+
+}
+
+.fa-sc{
+    scale: 0.6;
+}
+
+.box2:hover{
+    background-color: rgb(206, 205, 205);
+}
+
+.main2{
+    background-image: url(IN-en-20250407-TRIFECTA-perspective_8be2cd93-f2e6-4e34-acba-05b716385704_large.jpg);
+    background-size: cover;
+    background-position: right -160px;
+    height: 73.55vh;
+    width: 95vw;
+    background-repeat: no-repeat;
+    margin: 10px 40px 0 40px; 
+    border-radius: 22px;
+    background-color: #000000c7;
+    background-blend-mode: color-burn;
+    box-shadow: -5px 0 5px -5px grey;
+}
+
+.header h1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 57px;
+    font-weight: 960;
+    padding: 19.6vh;
+    font-family: 'Netflix Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.header2 h2{
+    display: flex;
+    justify-content: center;
+    margin-top: -18.6vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 12;
+    font-size: 2.7vh;
+}
+
+.header3 h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 3.7vh;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 10;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin:2vh -10vh 0 -5vh;
+}
+
+input::placeholder {
+    color: #ffffffb4; /* any color you want */
+}
+
+.form button{
+    border: none;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    border-radius: 50px;
+    width: 250px;
+    margin: 0 5vh 0 1vh; 
+    text-align: center;
+    transition: 0.3s ease;    
+}
+
+.form button:hover{
+    background-color: rgb(155, 3, 3);
+}
+
+.moviecardtxt{
+    font-size: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.808);
+    margin: 3vh 0 0 10vh;
+    font-weight: bold;
+}
+  
+.moviecards{
+    display: flex;
+    flex-direction: row;
+    gap: 5vh;
+    margin-top: 3vh;
+    box-shadow: 10px 0 5px -2px rgba(255, 255, 255, 0.3);
+    width: 178vh;
+    margin-left: 12vh;
+}
+
+.moviecards .cards img{
+    border-radius: 10px;
+    background-position: cover;
+}
+
+.right-sl{
+    border: none;
+    float: right;
+    margin: 18vh 9.0vh 0 0;
+    width: 24px;  
+}
+
+.right-sl button{
+    margin: 0vh 3.7vh 0 0;
+    background-color: rgba(255, 255, 255, 0.3);
+    border: none;
+    width: 26px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+.right-sl button:hover{
+    background-color: rgba(255, 255, 255, 0.733);
+}
+
+.cards{
+    background-position: cover;
+    transition: .3s ease-out;
+}
+
+.cards:hover{
+    scale: 1.08;
+}
+
+.slider-title{
+    display: flex;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -0.5px;
+    line-height: 23px;
+    color: #ffffff;
+    margin-top: -2vh;
+    margin-left: 1vh;
+}
+
+.descardheading{
+    font-size: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.808);
+    margin: 3vh 0 0 10vh;
+    font-weight: bold;
+}
+
+.descardscon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1.6vh;
+}
+
+.deescards{
+    width: 40vh;
+    height: 25vh;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.384);
+    margin: 3vh 0 0 0;
+}
+
+.icon{
+    scale: .5;
+}
+
+.descardscon h1{
+    margin: 6px 0 0 20px;
+    line-height: 5vh;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.descardscon p{
+    margin: 0 0 0 20px;
+    color: rgba(255, 255, 255, 0.555);
+    font-size: 20px;
+}
+
+.anoconttxt{
+    font-size: 4vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgba(255, 255, 255, 0.808);
+    margin: 3vh 0 0 10vh;
+    font-weight: bold;
+}
+
+.anocont{
+    display: grid;
+    row-gap: 1vh;
+    grid-template-columns: 170vh;
+    grid-template-rows: repeat(6,100px);
+    justify-content: center;
+    margin: 45px 0 0 0;
+}
+
+.anobox{
+    background-color: rgba(53, 51, 51, 0.63);
+    border-radius: 30px;
+    transition: .44s;
+    background-color: rgb(59, 57, 57);
+    outline: 2px solid rgb(71, 71, 71);
+}
+
+.anobox p{
+    margin: 4vh 0 0 3vh;
+    color: #ffffff;
+    font-size: 2vh;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.anobox:hover{
+    background-color: rgba(99, 98, 98, 0.63);
+}
+
+.svg{
+    justify-self: flex-end;
+    margin-top: -23px;
+    margin-right: 17px;
+}
+  
+.anoformntxt{
+    margin: 8vh 0 0 0;
+}
+
+.qcall{
+    color: rgb(177,174,174);
+    margin: 9vh 0 0 20vh;
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+.qcall a{
+    color: rgb(177, 174, 174);
+    font-size: 19px;
+    font-family: sans-serif;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(4,60px);
+    grid-template-rows: repeat(15,30px);
+    list-style-type: none;
+    gap: 1vh 30vh;
+    justify-content: flex-start;
+    margin: 6vh 0 0 20vh;
+    white-space: nowrap;
+}
+
+li a{
+    color: rgb(177, 174, 174);
+    font-size: 18.5px;
+    font-family: sans-serif;
+}
+
+.netflixindia{
+    white-space: nowrap;
+    color: rgb(177, 174, 174);
+    font-family: sans-serif;
+    font-size: 18.4;
+    margin: 4vh 0 0 20vh;
+}
+
